@@ -1,0 +1,18 @@
+[package]
+name = "Game_Test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profiles.dev]
+opt-level = 1
+
+[profiles.dev.package."*"]
+opt-level = 3
+
+[dependencies]
+bevy = { version = "0.14.1", features = ["dynamic_linking"] }
+# wgpu = "22.1.0"
+# wgpu-core = "22.1.0"
+# wgpu-hal = "22.0.0"
